@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>indexJavaScript.html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="searchbar.css">  
+</head>
+<body>
+    <h1> Creating a searchbar</h1>
+    <div class="search">
+        <div class="icon"></div>
+        <div class="input">
+            <input type="text" placeholder="Search" id="mysearch">
+        </div>
+    </div>
+    <div >
+        <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+    </div>
+    <script>
+        const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+        icon.onclick = function(){
+            search.classList.toggle('active')     //The classList returns 'active''classnames of search element.
+       }
+       </script>
+</body>
+
